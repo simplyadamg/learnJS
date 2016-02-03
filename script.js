@@ -1,5 +1,3 @@
-// An edit I've made on GitHub
-
 var exLength = function(){
 	var exTest = "Here's an example of .length"
 	// This string has a length of 28 and so 28 will be pushed to the console
