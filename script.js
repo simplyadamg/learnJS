@@ -1,3 +1,5 @@
+// and then lets push these comments back up to gitHub for the practice of it.
+
 var exLength = function(){
 	var exTest = "Here's an example of .length"
 	// This string has a length of 28 and so 28 will be pushed to the console
