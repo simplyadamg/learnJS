@@ -267,3 +267,37 @@ var exNotOrOperator = function(){
 // asVowels() // This is an assignment from coding house 101 part 2 that is currently incomplete
 // asContactList()
 // exObjects()
+
+var friends = {
+    steve : {
+        firstName : 'Steve',
+        lastName : 'Jobs',
+        number : '312.555.1212',
+        address : ['<street>','<city>','<state>','<zip>']
+        },
+    bill : {
+        firstName : 'Bill',
+        lastName : 'Gates',
+        number : '312.555.1313',
+        address : ['<street>','<city>','<state>','<zip>']
+        },
+    james : {
+        firstName : 'James',
+        lastName : 'Pintain',
+        number : '773.888.5883',
+        address : ['<street>','<city>','<state>','<zip>']
+        }
+    };
+
+// var list = function(){
+//     for(i in friends){
+//         console.log(i)
+//         }
+//     }
+
+for(i=0; i<=20; i++){
+     console.log(i)
+    if(i%3===0 && i%5===0){console.log("FizzBuzz");}
+    else if(i%3===0){console.log("Fizz");}
+    else if(i%5===0){console.log("Buzz");}
+    }
