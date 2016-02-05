@@ -252,6 +252,59 @@ var exNotOrOperator = function(){
 		return true;
 		}
 }
+var fizzBuzz = function(){
+for(i=0; i<=20; i++){
+     console.log(i)
+    if(i%3===0 && i%5===0){console.log("FizzBuzz");}
+    else if(i%3===0){console.log("Fizz");}
+    else if(i%5===0){console.log("Buzz");}
+    }
+}
+var exSwitch2 = function(){
+var dogs=prompt("What kind of dog do you have?").toUpperCase();
+console.log(dogs)
+switch(dogs){
+	case 'RABID':
+	  return console.log('Even if they love you they will still bite you and give you rabies');
+	  break;
+	case 'FAMILY':
+	  return console.log('Usually friendly, but lazy probbaly not going to defend the house');
+	  break;
+	case 'ATTACK':
+	  return console.log('Really great for hunting down criminals, and in dog fights\n'+
+	  					 'but more likely to bite their owner if kept in the house,\n'+
+	  					 'keep them in the back yard and away from chidlren.');
+	  break;
+	case 'GUARD':
+	  return console.log('They are usually great as family dogs, but will also attack\n'+
+	  				     'intuders or anyone trying to attack thier masters, really great\n'+
+	  				     'balance of attack and family');
+	  break;
+	case 'STREY':
+	  return console.log('If they are young they are tasty, but the older ones are very gamey and stringy.\n'+
+	  					 'The older ones are also very hard to train, much like humans who have been\n'+
+	  					 'out on the streets for most of thier lives.' );
+	  break;
+	default:
+	  return console.log('I love dogs')
+
+	}
+}
+var randomNumberGenerator = function(){
+randomNumberMin=prompt('Minimum random number range?');
+randomNumberMin=parseInt(randomNumberMin)
+randomNumberMax=prompt("Maximum random number range?");
+randomNumberMax=parseInt(randomNumberMax)
+randomNumberOutputQuantity=parseInt(prompt('How many of these do you want?'))
+
+for(x=randomNumberOutputQuantity;x>0;x--){
+var randomNumberOutput=(Math.floor(Math.random()*(randomNumberMax-randomNumberMin+1)))+randomNumberMin
+console.log(randomNumberOutput)
+	}
+}
+
+// randomNumberGenerator()
+// exSwitch2()
 // exNotOrOperator()
 // exDoWhileLoop()
 // exArraysPush()
@@ -267,37 +320,6 @@ var exNotOrOperator = function(){
 // asVowels() // This is an assignment from coding house 101 part 2 that is currently incomplete
 // asContactList()
 // exObjects()
+// asFizzBuzz()
 
-var friends = {
-    steve : {
-        firstName : 'Steve',
-        lastName : 'Jobs',
-        number : '312.555.1212',
-        address : ['<street>','<city>','<state>','<zip>']
-        },
-    bill : {
-        firstName : 'Bill',
-        lastName : 'Gates',
-        number : '312.555.1313',
-        address : ['<street>','<city>','<state>','<zip>']
-        },
-    james : {
-        firstName : 'James',
-        lastName : 'Pintain',
-        number : '773.888.5883',
-        address : ['<street>','<city>','<state>','<zip>']
-        }
-    };
 
-// var list = function(){
-//     for(i in friends){
-//         console.log(i)
-//         }
-//     }
-
-for(i=0; i<=20; i++){
-     console.log(i)
-    if(i%3===0 && i%5===0){console.log("FizzBuzz");}
-    else if(i%3===0){console.log("Fizz");}
-    else if(i%5===0){console.log("Buzz");}
-    }
