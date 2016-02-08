@@ -73,3 +73,4 @@ var rpsGameLogic = function(userInput,computerInput){
 		}
 }
 rpsGameLogic(userInput,computerInput);
+

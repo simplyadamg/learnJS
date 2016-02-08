@@ -365,12 +365,12 @@ function search(lastName){
 
 // };
 // console.log(contacts[2])
-function add(firstName, lastName, phoneNumber, mail){
+function add(firstName, lastName, phoneNumber, email){
     contacts[2] = {
     firstName: firstName,
     lastName: lastName,
     phoneNumber: phoneNumber,
-    email: mail
+    email: email
     }
 }
 add('dan','groovey','3125551212','dan@dan.com')
