@@ -203,41 +203,40 @@ myOwnObject = {
 
 }
 var asContactList = function(){
-friends = {
-    bill : {
-        firstName : "Bill", 
-        lastName : "Gates",
-        number : "800.555.1212",
-        address : ['<Street>','<City>','<State>']
+var friends = {
+    bill: {
+        firstName: 'Bill',
+        lastName: 'Gates',
+        number: '800.555.1212',
+        address: ['<street>','<city>','<state>','<zip>']
         },
-    steve : {
-        firstName : "Steve", 
-        lastName : "Jobs",
-        number : "800.555.1314",
-        address : ['<Street>','<City>','<State>']
+    steve: {
+        firstName: 'Steve',
+        lastName: 'Jorbs',
+        number: '800.555.1313',
+        address: ['<street>','<city>','<state>','<zip>']
         },
-    dave : {
-        firstName : "David",
-        lastName : "Gorman",
-        number : "312.695.5555",
-        address : ['<Street>','<City>','<State>']
+    dan: {
+        firstName: 'Daniel',
+        lastName: 'Groovy',
+        number: '312.555.1222',
+        address: ['<street>','<city>','<state>','<zip>']
         }
-    }
-var list = function(){
-for (var x in friends){
-    console.log(x)
-    }
-}
+    };
 
 var search = function(name){
-    for (var x in friends){
-        if(friends[x].firstName === name){
-            console.log(friends[x]);
-            return friends[x];
+    for (i in friends){
+        if(i === name){
+            console.log('MATCH!\n\n'+
+            			'First Name: ' + friends[i].firstName + '\n' +
+            			'Last Name: ' + friends[i].lastName + '\n' +
+            			'Number: ' + friends[i].number + '\n' +
+            			'Address: ' + friends[i].address);
+            return true;
             }
         }
-    }
-search("Steve")	
+    };
+search('steve') 	
 }
 // Demonstration of the NOT "!" Function
 var exNotOrOperator = function(){
@@ -322,3 +321,58 @@ console.log(randomNumberOutput)
 // exObjects()
 // asFizzBuzz()
 // by value (primitives)
+// Our person constructor
+var bob = {
+    firstName: "Bob",
+    lastName: "Jones",
+    phoneNumber: "(650) 777-7777",
+    email: "bob.jones@example.com"
+};
+
+var mary = {
+    firstName: "Mary",
+    lastName: "Johnson",
+    phoneNumber: "(650) 888-8888",
+    email: "mary.johnson@example.com"
+};
+
+var contacts = [bob, mary];
+
+function printPerson(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+
+function list() {
+	var contactsLength = contacts.length;
+	for (var i = 0; i < contactsLength; i++) {
+		printPerson(contacts[i]);
+	}
+}
+
+/*Create a search function
+then call it passing "Jones"*/
+function search(lastName){
+    var contactsLength = contacts.length;
+    for (var i = 0; i < contactsLength; i++) {
+		if(contacts[i].lastName === lastName){
+		    printPerson(contacts[i]);
+		    }
+	}
+}
+// contacts[2] = {
+// 	firstName: 'dan',
+// 	lastName: 'Groovey'
+
+// };
+// console.log(contacts[2])
+function add(firstName, lastName, phoneNumber, mail){
+    contacts[2] = {
+    firstName: firstName,
+    lastName: lastName,
+    phoneNumber: phoneNumber,
+    email: mail
+    }
+}
+add('dan','groovey','3125551212','dan@dan.com')
+list()
+

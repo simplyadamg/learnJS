@@ -37,7 +37,7 @@ switch(user){
     case '2': //fight
         while(!(strong === "YES" || strong === "NO")){
         var strong=prompt("Are you strong?").toUpperCase();
-        if(x==="yes")
+        if!(strong === "YES" || strong === "NO"))
             {
             alert("Wrong answer schmuck, try again!");
             }
