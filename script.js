@@ -392,3 +392,5 @@ if(suitcase.hasOwnProperty('shorts'){
         }
 console.log(suitcase.shorts);
 
+// This is a new thing to push to git
+
