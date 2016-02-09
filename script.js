@@ -1,4 +1,4 @@
-// Jumping directly to a quick commit 
+// Testing the macro for leanrJS
 
 var exLength = function(){
 	var exTest = "Here's an example of .length"
