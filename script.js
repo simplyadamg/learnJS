@@ -1,4 +1,4 @@
-// and then lets push these comments back up to gitHub for the practice of it.
+// Jumping directly to a quick commit 
 
 var exLength = function(){
 	var exTest = "Here's an example of .length"
@@ -392,5 +392,5 @@ if(suitcase.hasOwnProperty('shorts'){
         }
 console.log(suitcase.shorts);
 
-// This is a new thing to push to git
+// Pushing without commit, is this possible?
 
