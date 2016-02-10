@@ -1,4 +1,4 @@
-// Testing the macro for leanrJS attempt 3
+// Testing the macro for leanrJS attempt 4
 
 var exLength = function(){
 	var exTest = "Here's an example of .length"
