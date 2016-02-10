@@ -358,6 +358,45 @@ var asAddressBook = function(){
 	list()
 }
 
+var asCashRegister = function{
+
+	var cashRegister = {
+	    total:0,
+	    lastTransactionAmount:0,
+	    add: function(itemCost) {
+	        this.total +=  itemCost;
+	        this.lastTransactionAmount = itemCost;
+	    },
+	    lastTransactionAmmount: function{
+	        
+	        },
+	    scan: function(item,quantity) {
+	        switch (item) {
+	        case "eggs": this.add(0.98 * quantity); break;
+	        case "milk": this.add(1.23 * quantity); break;
+	        case "magazine": this.add(4.99 * quantity); break;
+	        case "chocolate": this.add(0.45 * quantity); break;
+	        }
+	        return true;
+	    },
+	    voidLastTransaction: function(){
+	        this.total = this.total - this.lastTransactionAmount;
+	        } 
+	    
+	};
+
+	cashRegister.scan('eggs',1);
+	cashRegister.scan('milk',1);
+	cashRegister.scan('magazine',1);
+	cashRegister.scan('chocolate',4);
+	cashRegister.voidLastTransaction();
+	//Void the last transaction and then add 3 instead
+	cashRegister.scan('chocolate',3);
+
+	//Show the total bill
+	console.log('Your bill is '+cashRegister.total);
+}
+
 
 // randomNumberGenerator()
 // exSwitch2()
@@ -379,18 +418,5 @@ var asAddressBook = function(){
 // asFizzBuzz()
 // by value (primitives)
 // asAddressBook()
-
-var suitcase = {
-    shirt: "Hawaiian"
-};
-if(suitcase.hasOwnProperty('shorts'){
-    console.log(suitcase.shorts)
-    }
-    else{
-        suitcase.shorts = 'fuckit'
-        console.log(suitcase.shorts);
-        }
-console.log(suitcase.shorts);
-
-// Pushing without commit, is this possible?
+// asCashRegister()
 
