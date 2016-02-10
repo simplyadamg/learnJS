@@ -1,5 +1,3 @@
-// Testing the macro for leanrJS attempt 4
-
 var exLength = function(){
 	var exTest = "Here's an example of .length"
 	// This string has a length of 28 and so 28 will be pushed to the console
