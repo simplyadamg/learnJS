@@ -395,7 +395,86 @@ var asCashRegister = function{
 	console.log('Your bill is '+cashRegister.total);
 }
 
+function asFindMode(){
+	function mode(mode){
+		var numberCountArray=[]
+		for(i=0; i<10; i++){
+			numberCountArray[i]=0;
+		}
+		for(i=0; i<mode.length; i++){
+		numberCountArray[mode[i]-1]=numberCountArray[mode[i]-1]+1
+		}
+		function getMaxOfArray(arr) {
+			return Math.max.apply(null, arr);
+		}
+		var arrMax = getMaxOfArray(numberCountArray)
+		for(i=0; i<numberCountArray.length; i++){
+			if(numberCountArray[i] === arrMax){
+				console.log(i+1)
+			}
+		}
+	}
+	mode([1,1,2,2,3,4,5])
+}
 
+function asPath(){
+    function findPath(matrix) {
+        var x=1;
+        var y=1;
+        var pathStep=1;
+        var whileOut=0;
+        while (x<matrix[0].length && y<matrix.length && whileOut<1000){
+            console.log('path step: '+pathStep)
+            pathStep++
+            console.log( 'current column X: ' + [x] + ' current row Y: ' + [y] +' Current Value: ' + matrix[y][x])
+        if((matrix[y][x])+1 === (matrix[y+1][x])){
+            console.log('love y+1')
+            y++
+            whileOut++
+            }//then whichever one it equals start the loop at that spot and loop again
+            else if((matrix[y][x])+1 === (matrix[y][x+1])){
+                 console.log('hate x+1')
+                 x++
+                 whileOut++
+            }
+            else if((matrix[y][x])+1 === (matrix[y][x-1])){
+                 console.log(' x-1')
+                 x--
+                 whileOut++
+            }
+            else if((matrix[y][x])+1 === (matrix[y-1][x])){
+                 console.log('y-1')
+                 y--
+                 whileOut++
+            }
+            else{
+                whileOut=1000 
+                console.log("neither")
+            } 
+
+        }
+
+    }
+
+    findPath([
+
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,1,0,0,0,0,0,0,0,0],
+    [0,2,0,0,0,0,0,0,0,0],
+    [0,3,0,0,0,0,0,0,0,0],
+    [0,4,0,0,0,0,0,0,0,0],
+    [0,5,0,13,14,15,0,0,0,0],
+    [0,6,0,12,0,0,0,0,0,0],
+    [0,7,0,11,0,0,0,0,0,0],
+    [0,8,9,10,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+
+    ])
+
+}
+
+// asFindPath()
+// asFindMode()
 // randomNumberGenerator()
 // exSwitch2()
 // exNotOrOperator()

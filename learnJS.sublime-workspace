@@ -3,31 +3,43 @@
 	{
 		"selected_items":
 		[
+			[
+				"ob",
+				"objectPusher"
+			],
+			[
+				"ROCK",
+				"ROCK"
+			],
+			[
+				"he",
+				"headStart"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/Adam/Desktop/script.js",
-			"settings":
-			{
-				"buffer_size": 9033,
-				"line_ending": "Unix"
-			}
-		}
 	],
-	"build_system": "",
+	"build_system": "Packages/User/node.sublime-build",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 47.0,
 		"selected_items":
 		[
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			]
 		],
-		"width": 0.0
+		"width": 575.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 260.0
 	},
 	"distraction_free":
 	{
@@ -40,6 +52,22 @@
 	},
 	"file_history":
 	[
+		"/Users/Adam/Desktop/B11_WhatAboutAsynchronousCallbacks/app.js",
+		"/Users/Adam/simpleCRM/index.html",
+		"/Users/Adam/learnJS/weirdParts.js",
+		"/Users/Adam/Downloads/scancode.reg",
+		"/Users/Adam/learnJS/script.js",
+		"/Users/Adam/Desktop/Ssh to sync simpleCRM.kmmacros",
+		"/Users/Adam/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Adam/learnJS/README.md",
+		"/Users/Adam/learnJS/test.js",
+		"/Users/Adam/learnJS/trollFight.js",
+		"/Users/Adam/learnJS/index.html",
+		"/Users/Adam/learnJS/udeme.js",
+		"/Users/Adam/learnJS/rockPaperScissors.js",
+		"/Users/Adam/Library/Application Support/Sublime Text 2/Packages/User/node.sublime-build",
+		"/Users/Adam/Library/Application Support/Sublime Text 2/Packages/User/Javascript.sublime-build",
+		"/Users/Adam/Desktop/script.js"
 	],
 	"find":
 	{
@@ -57,6 +85,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"git"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -74,35 +103,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/Adam/Desktop/script.js",
-					"settings":
-					{
-						"buffer_size": 9033,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								9033
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 5.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -137,16 +139,24 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 287.0
+	},
 	"replace":
 	{
 		"height": 0.0
 	},
-	"save_all_on_build": true,
+	"save_all_on_build": false,
 	"select_file":
 	{
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"",
+				"script.js"
+			]
 		],
 		"width": 0.0
 	},
@@ -161,7 +171,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 135.0,
+	"side_bar_visible": false,
+	"side_bar_width": 191.0,
 	"status_bar_visible": true
 }
