@@ -383,17 +383,17 @@ var asCashRegister = function{
 	    
 	};
 
-	cashRegister.scan('eggs',1);
-	cashRegister.scan('milk',1);
-	cashRegister.scan('magazine',1);
-	cashRegister.scan('chocolate',4);
-	cashRegister.voidLastTransaction();
-	//Void the last transaction and then add 3 instead
-	cashRegister.scan('chocolate',3);
+// 	cashRegister.scan('eggs',1);
+// 	cashRegister.scan('milk',1);
+// 	cashRegister.scan('magazine',1);
+// 	cashRegister.scan('chocolate',4);
+// 	cashRegister.voidLastTransaction();
+// 	//Void the last transaction and then add 3 instead
+// 	cashRegister.scan('chocolate',3);
 
-	//Show the total bill
-	console.log('Your bill is '+cashRegister.total);
-}
+// 	//Show the total bill
+// 	console.log('Your bill is '+cashRegister.total);
+//  }
 
 function asFindMode(){
 	function mode(mode){
@@ -497,3 +497,9 @@ function asPath(){
 // asAddressBook()
 // asCashRegister()
 
+// Setup
+
+
+//
+//  This script is broken right now.
+//
