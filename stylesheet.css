@@ -1,0 +1,57 @@
+*{
+background-color: #2C2C2C;
+}
+#crane-logo{
+	position: absolute;
+	height: 150px;
+	top: 50px;
+	left: 50px;
+}
+#navbar{
+	position: absolute;
+	top: 10px;
+	left: 70px;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#navbar ul li a {
+  background-color: ;
+  color: black;
+  width: 100px;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #606060;
+  
+}
+
+#navbar ul li a:hover {
+  
+  color: #C3C3C3;
+}
+svg{
+  
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -150px 0 0 -170px;
+  }
+ /* #crane-logo-ne{
+    transition: .5s;
+  }*/
+
+#crane-logo-ne {
+  
+}
