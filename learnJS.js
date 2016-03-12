@@ -17,9 +17,44 @@
 //  Function statment does work... A function expression creates a value that is not necessarly saved to a variable. 
 //  Mutate - to change something and if it's immuitable that means it can't be changed
 
+function a(){
+	console.log(this);
+	this.newvariable="hello";
+}
+a();
+
+var b = function(){
+	console.log(this);
+};
+
+b();
+
+console.log(newvariable);
 
 
 
+
+var c = {
+	name: 'the c object',
+	log: function(){
+		var self = this;
+		self.name = 'Updated c object when funciton invoked';
+		self.locatoin = "2";
+		console.log(self);
+		var setName = function(newName){
+			self.name=newName;
+
+		};
+		setName('updated again! the c object');
+		console.log(self);
+	},
+	location: 1,
+	size: 10
+};
+
+console.log(c);
+c.log();
+console.log(c);
 
 
 
